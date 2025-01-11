@@ -15,6 +15,7 @@ class RealTimeMessage extends Component
 
     public function triggerEvent(): void
     {
+        
         event(new PushNotification($this->message));
         $this->message = '';
     }
